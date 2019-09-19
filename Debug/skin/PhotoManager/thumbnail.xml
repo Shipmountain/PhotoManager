@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font name="微软雅黑" size="12" bold="false" default="true"/>	
+  <VerticalLayout name="lay_thumbnail_com"  width="126" height="122" inset="6,6,6,0" bordercolor="#FF1ED0FF" bordersize="0" borderround="2,1" >	
+	<Control name="ctrl_file_pic"  bordercolor="#FF1ED0FF" bordersize="0" width="114" height="84" />
+	<Edit name="edt_file_name" text="1.txt" textcolor="#FF333333"  align="center"  bordercolor="#FF04BAFF" bordersize="0" />
+  </VerticalLayout>
+</Window>

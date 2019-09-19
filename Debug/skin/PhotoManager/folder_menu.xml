@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window>
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Menu name="FolderMenu" bkcolor="#FFFFFFFF"  itemalign="left" itemtextpadding="30,0,0,0" bordersize="1" bordercolor="#FFDEDEDE" inset="1,1,1,1" itemhotbkcolor="#FFF1F3F7" width="150" >
+	</Menu>
+</Window>

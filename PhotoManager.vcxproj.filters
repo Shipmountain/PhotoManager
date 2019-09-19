@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{5995d12e-2354-49d6-b7c6-59f56d5c1f48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{4fbe49e2-91d0-47f1-aae4-bfd3aef94197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="business">
+      <UniqueIdentifier>{0aeadc33-842d-47fe-8d6b-7c7b1b64fb03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{18b5a10f-9e07-4f01-ab77-51f6090095ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdlib">
+      <UniqueIdentifier>{c996fb2b-f27e-4354-a8ef-6098e8e1c93c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="business\BusinessInterface.cpp">
+      <Filter>business</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\main_frame.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\msg_box.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\pic_view.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\setting.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\ui_interface.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="data\Common.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\DataFactory.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third\md5\md5.cpp">
+      <Filter>thirdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\catch_dump.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\log.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="business\AdbShell.cpp">
+      <Filter>business</Filter>
+    </ClCompile>
+    <ClCompile Include="business\Phone.cpp">
+      <Filter>business</Filter>
+    </ClCompile>
+    <ClCompile Include="business\DB.cpp">
+      <Filter>business</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="business\BusinessInterface.h">
+      <Filter>business</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\main_frame.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\msg_box.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\msg_def.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\pic_view.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\setting.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\ui_interface.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="data\Common.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\DataFactory.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third\md5\md5.h">
+      <Filter>thirdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\catch_dump.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\file.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\lock.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\log.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\singleton.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\thread_pool.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="business\AdbShell.h">
+      <Filter>business</Filter>
+    </ClInclude>
+    <ClInclude Include="business\Phone.h">
+      <Filter>business</Filter>
+    </ClInclude>
+    <ClInclude Include="business\DB.h">
+      <Filter>business</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\character_cvt.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PhotoManager.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

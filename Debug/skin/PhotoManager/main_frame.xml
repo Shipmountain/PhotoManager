@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="1046,678" mininfo="1046,678" caption="0,0,0,74" sizebox="4,4,4,4" roundcorner="2,1" showshadow="true" shadowsize="5" shadowposition="1,1" shadowcolor="#FF999999">
+  <Font name="微软雅黑" size="10" bold="false"/>					<!--0-->
+  <Font name="微软雅黑" size="10" bold="true"/>					    <!--1-->
+  <Font name="微软雅黑" size="12" bold="false" default="true"/>		<!--2-->
+  <Font name="微软雅黑" size="12" bold="true"/> 					<!--3-->
+  <Font name="微软雅黑" size="14" bold="false"/>	                <!--4-->
+  <Font name="微软雅黑" size="14" bold="true"/> 					<!--5-->
+  <Font name="微软雅黑" size="18" bold="true"/> 					<!--6-->
+  
+  <Default name="VScrollBar" value="width=&quot;9&quot; thumbnormalimage=&quot;file='pic/vscrollbar.png' source='0,0,9,12' corner='0,3,0,3'&quot; thumbhotimage=&quot;file='pic/vscrollbar.png' source='9,0,18,12' corner='0,3,0,3'&quot; thumbpushedimage=&quot;file='pic/vscrollbar.png' source='9,0,18,12' corner='0,3,0,3'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot;" />
+  <Default name="HScrollBar" value="height=&quot;9&quot; thumbnormalimage=&quot;file='pic/hscrollbar.png' source='0,0,12,9' corner='3,0,3,0'&quot; thumbhotimage=&quot;file='pic/hscrollbar.png' source='0,9,12,18' corner='3,0,3,0'&quot; thumbpushedimage=&quot;file='pic/hscrollbar.png' source='0,9,12,18' corner='3,0,3,0'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot;" />
+  <VerticalLayout bkcolor="#FFFFFFFF" >
+      <HorizontalLayout name="lay_title" bkcolor="#FFEEF0F6" height="74"  > <!--Title Menu begin-->
+	    <Control width="15" />
+	    <Label text="手机助手" autocalcwidth="true" font="6" />
+		
+		<Control width="100" />
+		
+		<VerticalLayout inset="0,15,0,15" width="60">
+		  <Option name="opt_local" text="本地电脑" group="module_group" textcolor="#FF333333" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF" selectedbkcolor="#FFEEF0F6" hotbkcolor="#FFEEF0F6" font="4" />
+		  <Control name="ctrl_local"  height="2" bkcolor="#FF06A8FF" />
+		</VerticalLayout>
+		
+		<Control width="36" />
+		<VerticalLayout inset="0,15,0,15" width="60">
+		  <Option name="opt_phone" text="远端手机" group="module_group" textcolor="#FF333333" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF" selectedbkcolor="#FFEEF0F6" hotbkcolor="#FFEEF0F6" font="4"  />
+		  <Control name="ctrl_phone"  height="2" bkcolor="#FF06A8FF" />
+		</VerticalLayout>
+		
+		<Control />
+		
+		<Button name="btn_phone_name" autocalcwidth="true" height="25" padding="0,25,0,24" bordercolor="#FFD6D8DD" bordersize="0" textcolor="#FF333333" bkcolor="FFEEF0F6"  hottextcolor="FF06A8FF" pushedtextcolor="FF06A8FF"  tooltip="点击切换手机" visible="false"/>
+        <Control width="18" />
+		<Button name="btn_sync" text="同步"  height="24" width="70" padding="0,25,0,25" tooltip="点击同步，将所连接的全部手机的信息同步到本地电脑上" normalimage="file='pic/btn_sync.png' source='0,0,40,24' corner='11,20,11,20'" hotimage="file='pic/btn_sync.png' source='40,0,80,24' corner='11,20,11,20'" pushedimage="file='pic/btn_sync.png' source='40,0,80,24' corner='11,20,11,20'" visible="false"/>
+		<Control width="18" visible="false" />
+		<Button name="btn_setting"  height="16" width="15" padding="0,30,0,38"  tooltip="设置"  normalimage="file='pic/btn_setting.png' source='0,0,15,16'" hotimage="file='pic/btn_setting.png' source='15,0,30,16'" pushedimage="file='pic/btn_setting.png' source='15,0,30,16'"/>
+		<Control width="12" />
+		<Control width="1" bordercolor="#FFD6D8DD" bordersize="1" height="16" padding="0,29,0,29" />
+		<Control width="12" />
+		<Button name="minbtn" height="16" width="15" padding="0,30,0,38" tooltip="最小化" normalimage="file='pic/btn_minimize.png' source='0,0,15,16'" hotimage="file='pic/btn_minimize.png' source='15,0,30,16'" pushedimage="file='pic/btn_minimize.png' source='15,0,30,16'" />
+		<Control width="12" />
+		<Button name="maxbtn" height="16" width="15" padding="0,30,0,38" tooltip="最大化" normalimage="file='pic/btn_maximize.png' source='0,0,15,16'" hotimage="file='pic/btn_maximize.png' source='15,0,30,16'" pushedimage="file='pic/btn_maximize.png' source='15,0,30,16'"/>
+		<Button name="restorebtn" height="16" width="15" padding="0,30,0,38" tooltip="还原" normalimage="file='pic/btn_restore.png' source='0,0,15,16'" hotimage="file='pic/btn_restore.png' source='15,0,30,16'" pushedimage="file='pic/btn_restore.png' source='15,0,30,16'" visible="false"/>
+		<Control width="12" />
+		<Button name="closebtn" height="16" width="15" padding="0,30,0,38" tooltip="关闭" normalimage="file='pic/btn_close.png' source='0,0,15,16'" hotimage="file='pic/btn_close.png' source='15,0,30,16'" pushedimage="file='pic/btn_close.png' source='15,0,30,16'" />
+	    <Control width="12" />
+	  </HorizontalLayout> <!--Title Menu end-->
+	  
+	  <Control height="1" bordercolor="#FFD6D8DD" bordersize="1" />
+	  
+	  <HorizontalLayout>
+	    <VerticalLayout name="lay_left" width="164" bkcolor="#FFF9FAFB" >
+		  <Control height="6" />
+		  <HorizontalLayout name="lay_left_file_list" height="32" >
+		    <Control name="ctrl_left_file_list" width="3" bkcolor="FF06A8FF" />
+			<Option name="opt_left_file_list" text="全部文件" group="left_type_group" align="left" textcolor="#FF333333" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF" selectedbkcolor="#FFE0F2FB" hotbkcolor="#FFEDF6FB"  textpadding="56,0,0,0" />
+		  </HorizontalLayout>
+		  <HorizontalLayout name="lay_left_image" height="32" >
+		    <Control name="ctrl_left_image" width="3" bkcolor="FF06A8FF" />
+			<Option name="opt_left_image" text="图片" group="left_type_group" align="left" textcolor="#FF333333" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF"  selectedbkcolor="#FFE0F2FB" hotbkcolor="#FFEDF6FB" textpadding="56,0,0,0" />
+		  </HorizontalLayout>
+		  <HorizontalLayout name="lay_left_vedio" height="32" >
+		    <Control name="ctrl_left_vedio" width="3" bkcolor="FF06A8FF" />
+			<Option name="opt_left_vedio" text="视频" group="left_type_group" align="left" textcolor="#FF333333" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF"  selectedbkcolor="#FFE0F2FB" hotbkcolor="#FFEDF6FB" textpadding="56,0,0,0" />
+		  </HorizontalLayout>
+		  <HorizontalLayout name="lay_left_music" height="32" >
+		    <Control name="ctrl_left_music" width="3" bkcolor="FF06A8FF" />
+			<Option name="opt_left_music" text="音乐" group="left_type_group" align="left" textcolor="#FF333333" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF"  selectedbkcolor="#FFE0F2FB" hotbkcolor="#FFEDF6FB" textpadding="56,0,0,0" />
+		  </HorizontalLayout>
+		  <HorizontalLayout name="lay_left_doc" height="32" >
+		    <Control name="ctrl_left_doc" width="3" bkcolor="FF06A8FF" />
+			<Option name="opt_left_doc" text="文档" group="left_type_group" align="left" textcolor="#FF333333" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF"  selectedbkcolor="#FFE0F2FB" hotbkcolor="#FFEDF6FB" textpadding="56,0,0,0" />
+		  </HorizontalLayout>
+		  <HorizontalLayout name="lay_left_other" height="32" >
+		    <Control name="ctrl_left_other" width="3" bkcolor="FF06A8FF" />
+			<Option name="opt_left_other" text="其他" group="left_type_group" align="left" textcolor="#FF333333" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF"  selectedbkcolor="#FFE0F2FB" hotbkcolor="#FFEDF6FB" textpadding="56,0,0,0" />
+		  </HorizontalLayout>
+		</VerticalLayout>
+		
+		<Control width="1" bordercolor="FFD6D8DD" bordersize="1" />
+		
+		<VerticalLayout name="lay_right"  >
+		  <HorizontalLayout height="39" bkcolor="#FFF9FAFB" >
+		    <Control width="13" />
+		    <Button name="btn_right_back" enabled="false" width="16" height="16" padding="0,11,0,12"  normalimage="file='pic/back.png' source='0,0,16,16'" hotimage="file='pic/back.png' source='16,0,32,16'" pushedimage="file='pic/back.png' source='32,0,48,16'" disabledimage="file='pic/back.png' source='48,0,64,16'"  />
+			<Control width="15" />
+			<Button name="btn_right_forward" enabled="false" width="16" height="16" padding="0,11,0,12" normalimage="file='pic/forward.png' source='0,0,16,16'" hotimage="file='pic/forward.png' source='16,0,32,16'" pushedimage="file='pic/forward.png' source='32,0,48,16'" disabledimage="file='pic/forward.png' source='48,0,64,16'" />
+			<Control width="15" />
+			<Button name="btn_right_flush" width="16" height="20" padding="0,9,0,10"  normalimage="file='pic/refresh.png' source='0,0,16,20'" hotimage="file='pic/refresh.png' source='16,0,32,20'" pushedimage="file='pic/refresh.png' source='32,0,48,20'" />
+			<Control width="13" />
+			<Control width="1" bordercolor="#FFE4E4E4" bordersize="1" height="16" padding="0,11,0,12" />
+			<Control width="13" />
+			
+			<HorizontalLayout name="lay_right_dir_path" inset="0,11,0,12" >
+			</HorizontalLayout>
+			
+			<Option name="opt_right_switch_list" group="view_group" width="16" height="16" padding="0,11,0,12"  normalimage="file='pic/list.png' source='0,0,16,16'" hotimage="file='pic/list.png' source='16,0,32,16'" pushedimage="file='pic/list.png' source='32,0,48,16'" selectedimage="file='pic/list.png' source='32,0,48,16'" tooltip="列表模式" />
+			<Control width="5" />
+			<Option name="opt_right_switch_thumbnail" group="view_group" selected="true" width="16" height="16" padding="0,11,0,12"  normalimage="file='pic/thumb.png' source='0,0,16,16'" hotimage="file='pic/thumb.png' source='16,0,32,16'" pushedimage="file='pic/thumb.png' source='32,0,48,16'" selectedimage="file='pic/thumb.png' source='32,0,48,16'" tooltip="缩略图模式" />
+			<Control width="3" visible="false" />
+			<Option name="opt_right_switch_date" group="view_group" width="18" height="18" padding="0,9,0,12"  normalimage="file='pic/date1.png'" hotimage="file='pic/date2.png'" pushedimage="file='pic/date2.png'" selectedimage="file='pic/date2.png'" tooltip="日期模式" visible="false" />
+			<Control width="14" />
+		  </HorizontalLayout>
+		  
+		  <VerticalLayout name="lay_right_thumbnail" visible="true" >
+		    <Control height="1" bordercolor="#FFF0F0F0" bordersize="1" />
+		    <TileLayout name="lay_right_thumbnail_content" itemsize="126,122" childpadding="12"  inset="12,6,4,6" vscrollbar="true" >
+			</TileLayout >
+		  </VerticalLayout>
+		  
+		  <List name="lst_right_list" visible="false" itemtextpadding="5,5,0,0" multiselect="true" vscrollbar="true" hscrollbar="true" itemtextcolor="#FF333333" itemselectedtextcolor="#FFFFFFFF" itemhotbkcolor="#FFE6F6FF" itemlinecolor="#FFFFFFFF" bkcolor="#FFFFFFFF" >
+		    <ListHeader visible="true" height="32" bkcolor="#FFFFFFFF" bordersize="1" bordercolor="FFF0F0F0" >
+			  <ListHeaderItem inset="6,7,5,0" text="文件名"  minwidth="60" endellipsis="true" width="175" textpadding="30,0,0,0" textcolor="#FF757880" align="left"  >  
+                <VerticalLayout >  
+                  <CheckBox name="chk_all_slelect" width="17" height="17" normalimage="file='pic/checkbox.png' source='0,0,17,17'" selectedimage="file='pic/checkbox.png' source='51,0,68,17'" hotimage="file='pic/checkbox.png' source='17,0,34,17'" />  
+                </VerticalLayout>  
+              </ListHeaderItem>
+			  <ListHeaderItem text="修改时间" width="145" align="left"  textcolor="#FF757880" />
+			  <ListHeaderItem text="大小（KB）" width="75" align="left" textcolor="#FF757880"  />			  
+			  <ListHeaderItem text="路径"  align="left"  textcolor="#FF757880"  />
+			</ListHeader>
+		  </List>
+		  
+		  <VerticalLayout name="lay_right_date" visible="false">
+		    <Control height="1" bordercolor="#FFF0F0F0" bordersize="1" />
+		    <VerticalLayout name="lay_right_date_content" vscrollbar="true" >
+			</VerticalLayout >
+		  </VerticalLayout>
+		  
+		  <Control height="1" bordercolor="#FFD6D8DD" bordersize="1" />
+		  <HorizontalLayout height="32" >
+		    <Control width="20" />
+		    <Label name="lbl_right_item_count" text="0项" textcolor="#FF999999"  width="42" align="left" />
+			<HorizontalLayout name="lay_right_page" visible="false" >
+			  <Control />
+			  <Button name="btn_page_back" width="16" height="16" padding="0,7,0,9"  normalimage="file='pic/last_page.png' source='0,0,16,16'" hotimage="file='pic/last_page.png' source='16,0,32,16'" pushedimage="file='pic/last_page.png' source='32,0,48,16'" tooltip="上一页" />
+			  <Option name="opt_page_1" text="1" group="page_group" align="left"  width="16" textcolor="#FF666666" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF" padding="5,0,0,0" selectedbkcolor="#FFFFFFFF" />
+			  <Option name="opt_page_2" text="2" group="page_group" align="left"  width="16" textcolor="#FF666666" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF" padding="12,0,0,0" selectedbkcolor="#FFFFFFFF"/>
+			  <Option name="opt_page_3" text="3" group="page_group" align="left"  width="16" textcolor="#FF666666" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF" padding="12,0,0,0" selectedbkcolor="#FFFFFFFF"/>
+			  <Option name="opt_page_4" text="4" group="page_group" align="left"  width="16" textcolor="#FF666666" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF" padding="12,0,0,0" selectedbkcolor="#FFFFFFFF"/>
+			  <Option name="opt_page_5" text="5" group="page_group" align="left"  width="16" textcolor="#FF666666" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF" padding="12,0,0,0" selectedbkcolor="#FFFFFFFF"/>
+			  <Option name="opt_page_6" text="6" group="page_group" align="left"  width="16" textcolor="#FF666666" hottextcolor="#FF06A8FF" selectedtextcolor="#FF06A8FF" pushedtextcolor="#FF06A8FF" padding="12,0,0,0" selectedbkcolor="#FFFFFFFF"/>
+			  <Button name="btn_page_forward" width="16" height="16" padding="5,7,0,9"  normalimage="file='pic/next_page.png' source='0,0,16,16'" hotimage="file='pic/next_page.png' source='16,0,32,16'" pushedimage="file='pic/next_page.png' source='32,0,48,16'" tooltip="下一页" />
+			  <Control width="12" />
+			  <Label name="lbl_page_total" text="共3项" textcolor="#FF666666"  autocalcwidth="true"  />
+			  <Control />
+			</HorizontalLayout>
+		  </HorizontalLayout>
+
+		</VerticalLayout>	  
+	  </HorizontalLayout>
+	  <Gif name="gif_loading" text="loading" bkimage="pic/loading.gif" width="32" height="32" float="true" align="center" visible="false"  />
+  </VerticalLayout>
+</Window>

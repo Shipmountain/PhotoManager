@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="395,195" mininfo="395,195" caption="0,0,0,40" roundcorner="2,2,2,2">
+  <Font name="微软雅黑" size="14" bold="false" default="true" />
+  <Font name="微软雅黑" size="14" bold="true"/>
+  <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='pic/scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='pic/scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='pic/scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='pic/scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='pic/scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='pic/scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='pic/scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='pic/scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='pic/scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='pic/scrollbar.png' source='0,16,16,32'&quot;" />
+    <VerticalLayout bkcolor="#FFFFFFFF" bordersize="1" bordercolor="#FFE4E4E4" >
+      <HorizontalLayout height="40" bkcolor="#FFC6C6C6">
+		<Label name="lbl_title" text="" autocalcwidth="true" padding="10,0,0,0" textcolor="#FF999999"/>
+		<Control />
+        <Button name="closebtn" tooltip="关闭" width="29" height="34" normalimage="file='pic/btn_sys.png' source='0,102,29,136'" hotimage="file='pic/btn_sys.png' source='29,102,58,136'" pushedimage="file='pic/btn_sys.png' source='58,102,87,136'"  visible="true"/>
+      </HorizontalLayout>
+	  
+	  <Control height="20" />
+	  
+	  <VerticalLayout >			
+	    <HorizontalLayout height="60" >
+		  <Control width="30" />
+		  <VerticalLayout width="60" >
+		    <Control name="ctl_image" width="60" height="60" bkimage="" />
+		  </VerticalLayout>
+		  <Control width="10" />
+		  <VerticalLayout >
+		    <Control />
+		    <Text name="txt_msg" text=""  width="270" height="0" />
+		    <Control />
+		  </VerticalLayout>
+		</HorizontalLayout>
+		
+		<Control height="20" />
+		
+		<HorizontalLayout height="30">
+		  <Control />
+		  <Button  name="btn_ok" text="确定" width="120"  textcolor="#FFFFFFFF"  normalimage="file='pic/btn_ok.png' source='0,0,102,32'" hotimage="file='pic/btn_ok.png' source='306,0,408,32'" pushedimage="file='pic/btn_ok.png' source='102,0,204,32'" />
+		  <Control width="25" />
+		  <Button  name="btn_cancel" text="取消" width="120"  textcolor="#FFFFFFFF"  normalimage="file='pic/btn_cancel.png' source='0,0,112,40'" hotimage="file='pic/btn_cancel.png' source='336,0,448,40'" pushedimage="file='pic/btn_cancel.png' source='112,0,224,40'" />
+		  <Control />
+		</HorizontalLayout>
+	  </VerticalLayout>
+    </VerticalLayout>
+</Window>

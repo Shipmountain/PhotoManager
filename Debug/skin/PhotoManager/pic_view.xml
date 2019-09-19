@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="1024,650" mininfo="1024,650" caption="0,0,0,50" >
+  <Font name="微软雅黑" size="10" bold="false"/>					<!--0-->
+  <Font name="微软雅黑" size="10" bold="true"/>					    <!--1-->
+  <Font name="微软雅黑" size="12" bold="false" default="true"/>		<!--2-->
+  <Font name="微软雅黑" size="12" bold="true"/> 					<!--3-->
+  <Font name="微软雅黑" size="14" bold="false"/>	                <!--4-->
+  <Font name="微软雅黑" size="14" bold="true"/> 					<!--5-->
+  <Font name="微软雅黑" size="16" bold="true"/> 					<!--6-->
+  <Default name="HScrollBar" value="height=&quot;8&quot; thumbnormalimage=&quot;file='pic/hscrollbar.png' source='0,0,12,9' corner='3,0,3,0'&quot; thumbhotimage=&quot;file='pic/hscrollbar.png' source='0,9,12,18' corner='3,0,3,0'&quot; thumbpushedimage=&quot;file='pic/hscrollbar.png' source='0,9,12,18' corner='3,0,3,0'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot;" />
+  <VerticalLayout name="lay_main" bkcolor="#FF000000" >  
+     <Control name="ctrl_image" />
+	  
+	 <HorizontalLayout name="lay_thumbnail" height="66" visible="false" >
+	    <Control />
+	    <Button name="btn_last_page" tooltip="上一页" width="9" height="16"  padding="0,21,0,21" normalimage="file='pic/PicViewDlg/btn_bottom_left.png' source='0,0,9,16'" hotimage="file='pic/PicViewDlg/btn_bottom_left.png' source='9,0,18,16'" pushedimage="file='pic/PicViewDlg/btn_bottom_left.png' source='9,0,18,16'" disabledimage="file='pic/PicViewDlg/btn_bottom_left.png' source='18,0,27,16'" />
+		<Control width="12" />
+		<HorizontalLayout name="lay_thumbnail_list" width="778" hscrollbarstyle="height=&quot;8&quot; thumbnormalimage=&quot;file='pic/hscrollbar.png' source='0,0,12,9' corner='3,0,3,0'&quot; thumbhotimage=&quot;file='pic/hscrollbar.png' source='0,9,12,18' corner='3,0,3,0'&quot; thumbpushedimage=&quot;file='pic/hscrollbar.png' source='0,9,12,18' corner='3,0,3,0'&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot;"  >
+		</HorizontalLayout>
+		<Control width="12" />
+		<Button name="btn_next_page" tooltip="下一页" width="9" height="16"  padding="0,21,0,21" normalimage="file='pic/PicViewDlg/btn_bottom_right.png' source='0,0,9,16'" hotimage="file='pic/PicViewDlg/btn_bottom_right.png' source='9,0,18,16'" pushedimage="file='pic/PicViewDlg/btn_bottom_right.png' source='9,0,18,16'" disabledimage="file='pic/PicViewDlg/btn_bottom_right.png' source='18,0,27,16'"/>
+		<Control />
+	  </HorizontalLayout>  
+	  
+	  <HorizontalLayout name="lay_top" height="60" float="true" visible="false" inset="0,15,0,15"  bkimage="pic/PicViewDlg/dlg_mask_top.png" >
+	    <Control width="15" />
+	    <Label name="lbl_image_name" text="图片名" autocalcwidth="true" textcolor="#FFFFFFFF" font="6" height="30" />
+		<Control />		
+		<Control width="12" />
+		<Button name="minbtn" height="16" width="18"  tooltip="最小化" normalimage="file='pic/PicViewDlg/btn_minimize.png' source='0,0,18,16'" hotimage="file='pic/PicViewDlg/btn_minimize.png' source='18,0,36,16'" pushedimage="file='pic/PicViewDlg/btn_minimize.png' source='18,0,36,16'" />
+		<Control width="12" />
+		<Button name="maxbtn" height="16" width="18"  visible="false" tooltip="最大化" normalimage="file='pic/PicViewDlg/btn_maximize.png' source='0,0,18,16'" hotimage="file='pic/PicViewDlg/btn_maximize.png' source='18,0,36,16'" pushedimage="file='pic/PicViewDlg/btn_maximize.png' source='18,0,36,16'"/>
+		<Button name="restorebtn" height="16" width="18"  visible="true" tooltip="还原" normalimage="file='pic/PicViewDlg/btn_restore.png' source='0,0,18,16'" hotimage="file='pic/PicViewDlg/btn_restore.png' source='18,0,36,16'" pushedimage="file='pic/PicViewDlg/btn_restore.png' source='18,0,36,16'" />
+		<Control width="12" />
+		<Button name="closebtn" height="16" width="18" tooltip="关闭" normalimage="file='pic/PicViewDlg/btn_close.png' source='0,0,18,16'" hotimage="file='pic/PicViewDlg/btn_close.png' source='18,0,36,16'" pushedimage="file='pic/PicViewDlg/btn_close.png' source='18,0,36,16'" />
+	    <Control width="12" />
+	  </HorizontalLayout>  
+	  
+	  <VerticalLayout name="lay_left" width="114" float="true" visible="false" >
+	    <Control />
+		<Button name="btn_last_one"  tooltip="上一张" padding="54,0,0,0" width="60" height="60" normalimage="file='pic/PicViewDlg/left_btn.png' source='0,0,60,60'" hotimage="file='pic/PicViewDlg/left_btn.png' source='60,0,120,60'" pushedimage="file='pic/PicViewDlg/left_btn.png' source='60,0,120,60'" disabledimage="file='pic/PicViewDlg/left_btn.png' source='180,0,240,60'" />
+		<Control />
+	  </VerticalLayout>
+	  
+	  <VerticalLayout name="lay_right" width="114" float="true" visible="false" >
+	    <Control />
+		<Button name="btn_next_one" tooltip="下一张" padding="0,0,54,0" width="60" height="60" normalimage="file='pic/PicViewDlg/right_btn.png' source='0,0,60,60'" hotimage="file='pic/PicViewDlg/right_btn.png' source='60,0,120,60'" pushedimage="file='pic/PicViewDlg/right_btn.png' source='60,0,120,60'" disabledimage="file='pic/PicViewDlg/right_btn.png' source='180,0,240,60'" />
+		<Control />
+	  </VerticalLayout>
+	  
+	  <HorizontalLayout name="lay_bottom" height="56" float="true" visible="false" inset="0,16,0,16" bkimage="pic/PicViewDlg/dlg_mask_down.png" >
+	    <Control />
+		<Button name="btn_rotate" tooltip="旋转" width="24" height="24" normalimage="file='pic/PicViewDlg/btn_rotate.png' source='0,0,24,24'" hotimage="file='pic/PicViewDlg/btn_rotate.png' source='24,0,48,24'" pushedimage="file='pic/PicViewDlg/btn_rotate.png' source='24,0,48,24'" disabledimage="file='pic/PicViewDlg/btn_rotate.png' source='72,0,96,24'" />
+
+		<Button name="btn_download" tooltip="下载" width="24" height="24" padding="50,0,0,0"  normalimage="file='pic/PicViewDlg/btn_download.png' source='0,0,24,24'" hotimage="file='pic/PicViewDlg/btn_download.png' source='24,0,48,24'" pushedimage="file='pic/PicViewDlg/btn_download.png' source='24,0,48,24'"  />
+
+		<Button name="btn_delete" tooltip="删除" width="24" height="24" padding="50,0,0,0" normalimage="file='pic/PicViewDlg/btn_delete.png' source='0,0,24,24'" hotimage="file='pic/PicViewDlg/btn_delete.png' source='24,0,48,24'" pushedimage="file='pic/PicViewDlg/btn_delete.png' source='24,0,48,24'" />
+
+		<Button name="btn_show_thumbnail" text="展开缩略图"  textcolor="#FFFFFFFF" hottextcolor="#FF0586FF" pushedtextcolor="#FF0586FF" font="6" height="24" width="120" padding="50,0,0,0" align="left" normalimage="file='pic/PicViewDlg/collapse.png' source='0,0,40,24' dest='80,0,120,24'" hotimage="file='pic/PicViewDlg/collapse.png' source='40,0,80,24' dest='80,0,120,24'" pushedimage="file='pic/PicViewDlg/collapse.png' source='80,0,120,24' dest='80,0,120,24'" bordersize="0" bordercolor="#FFFFFFFF" />
+		<Button name="btn_hide_thumbnail"    textcolor="#FFFFFFFF" hottextcolor="#FF0586FF" pushedtextcolor="#FF0586FF" font="6" height="24" width="120" padding="50,0,0,0" align="left" normalimage="file='pic/PicViewDlg/expand.png' source='0,0,40,24' dest='80,0,120,24'" hotimage="file='pic/PicViewDlg/expand.png' source='40,0,80,24' dest='80,0,120,24'" pushedimage="file='pic/PicViewDlg/expand.png' source='80,0,120,24' dest='80,0,120,24'" bordersize="0" bordercolor="#FFFFFFFF" visible="false" />
+		<Control />
+	  </HorizontalLayout>
+	  
+	  <Gif name="gif_loading" text="loading" bkimage="pic/PicViewDlg/loading.gif" width="36" height="36" float="true" align="center" visible="false"  />
+  </VerticalLayout>
+</Window>

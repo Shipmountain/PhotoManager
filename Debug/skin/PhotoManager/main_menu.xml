@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window>
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Menu name="MainMenu" bkcolor="#FFFFFFFF"  itemalign="left" itemtextpadding="30,0,0,0" bordersize="1" bordercolor="#FFDEDEDE" inset="1,1,1,1" itemhotbkcolor="#FFF1F3F7" width="150" >
+	  <MenuElement name="menu_delete" text="删除" width="130" align="left" height="30" />
+	  <MenuElement name="menu_rename" text="重命名" width="130" align="left" height="30"/>
+	  <MenuElement name="menu_sync" text="同步" width="130" align="left" height="30"/>
+	  <MenuElement name="menu_cancel_sync" text="取消同步" width="130" align="left" height="30"/>
+	</Menu>
+</Window>

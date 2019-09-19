@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement name="lay_file_list_com" height="40">	
+    <HorizontalLayout >
+	  <CheckBox name="chk_list_com_slelect" width="17" height="17" padding="6,11,0,11" normalimage="file='pic/checkbox.png' source='0,0,17,17'" selectedimage="file='pic/checkbox.png' source='51,0,68,17'" hotimage="file='pic/checkbox.png' source='17,0,34,17'" /> 
+	  <Control name="ctrl_list_com_image" width="20" height="20" padding="6,10,0,10"  />
+	  <Edit name="edt_list_com_change" visible="false" height="24" padding="6,8,0,8" align="left" textcolor="#FF333333" bordercolor="#FF04BAFF" bordersize="0" />
+	  <Label name="lbl_list_com_name" padding="6,0,0,0" textcolor="#FF333333" />
+    </HorizontalLayout>
+	
+	<Label name="lbl_list_com_time" textcolor="#FF333333" />
+	<Label name="lbl_list_com_size" textcolor="#FF333333" />
+	<Label name="lbl_list_com_path" textcolor="#FF333333" />
+  </ListContainerElement>
+</Window>

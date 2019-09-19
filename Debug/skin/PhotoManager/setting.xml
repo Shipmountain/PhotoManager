@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="450,195"  caption="0,0,0,32"  roundcorner="1,1" showshadow="true" shadowsize="5" shadowposition="1,1" shadowcolor="#FF999999"  >
+  <Font name="微软雅黑" size="12" bold="false" default="true" />
+  <Font name="微软雅黑" size="13" bold="true"/>
+  <Font name="微软雅黑" size="14" bold="false"/>
+  <VerticalLayout bkcolor="#FFFFFFFF" >
+      <HorizontalLayout height="32" bkcolor="#FFEEF0F6">
+	    <Control width="10" />
+		<Label  name="lbl_title" text="设置" autocalcwidth="true" textcolor="#FF999999"/>		
+		<Control />
+		<Button name="closebtn" height="16" width="15" visible="false"  padding="0,8,0,8" tooltip="关闭" normalimage="file='pic/btn_close.png' source='0,0,15,16'" hotimage="file='pic/btn_close.png' source='15,0,30,16'" pushedimage="file='pic/btn_close.png' source='15,0,30,16'" />
+        <Control width="7" />
+	  </HorizontalLayout>
+	  
+	  <Control height="20" />
+	  
+	  <HorizontalLayout inset="50,0,0,0" height="25">
+	    <Label  text="本地存储路径: " autocalcwidth="true" textcolor="#FF636363"/>
+	  </HorizontalLayout>
+	  
+	  <Control height="3" />
+	  
+	  <HorizontalLayout inset="50,0,0,0" height="25">
+		<Edit name="edt_local_store_path" bordercolor="#FFDAE3ED" bordersize="1" width="350" />
+	  </HorizontalLayout>
+	  
+	  <Control height="30" />
+	  
+	  <HorizontalLayout height="25">
+		<Control />
+		<Button  name="btn_ok" text="确定" width="100"  textcolor="#FF3D3D3D"  normalimage="file='pic/button.png' source='0,0,15,27' corner='2,2,2,2'" hotimage="file='pic/button.png' source='15,0,30,27' corner='2,2,2,2'" pushedimage="file='pic/button.png' source='30,0,45,27' corner='2,2,2,2'" disabledimage="file='pic/button.png' source='45,0,60,27' corner='2,2,2,2'" />
+		<Control width="10" />
+		<Button  name="btn_cancel" text="取消" width="100"   textcolor="#FF3D3D3D"  normalimage="file='pic/button.png' source='0,0,15,27' corner='2,2,2,2'" hotimage="file='pic/button.png' source='15,0,30,27' corner='2,2,2,2'" pushedimage="file='pic/button.png' source='30,0,45,27' corner='2,2,2,2'" disabledimage="file='pic/button.png' source='45,0,60,27' corner='2,2,2,2'" />
+		<Control />
+	  </HorizontalLayout>
+  </VerticalLayout>
+</Window>
